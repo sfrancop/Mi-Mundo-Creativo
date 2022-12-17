@@ -1,0 +1,40 @@
+.navbar-container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container-imagen{
+    height: 20%;
+    width: 20%;
+    min-width: 10%;
+}
+
+.navbar-container-list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navbar-container-list-element{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar-container-list-element-link{
+    color: black;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.navbar-container-list-element-link:hover{
+    padding: .5rem;
+    background-color: #ca3338;
+    color: white;
+    border-radius: .5rem;
+    font-weight: bold;
+}
