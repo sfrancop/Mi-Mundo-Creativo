@@ -1,6 +1,6 @@
 {
   "name": "jardin-mi-mundo-creativo",
-  "homepage": "https://sfrancop.github.io/Front-End",
+  "homepage":"https://sfrancop.github.io/Front-End",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

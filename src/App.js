@@ -1,16 +1,18 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Inscripcion from './pages/Inscripcion/Inscripcion';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/inscripcion" element={<Inscripcion/>}/>     
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <HashRouter basename="/Front-End">
+        <Routes>
+          <Route path="/Front-End" element={<Home/>} />
+          <Route path="/inscripcion" element={<Inscripcion/>}/>
+        </Routes>
+      </HashRouter>
+    </div>
   );
 }
 
