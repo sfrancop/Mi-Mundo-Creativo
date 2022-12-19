@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./Informacion.css"
 import { Link } from 'react-router-dom'
-import { ClipboardMinus } from 'react-bootstrap-icons'
+import { ClipboardMinus, Facebook, GeoAlt, Instagram, Telephone, Whatsapp } from 'react-bootstrap-icons'
 import Nivel from '../Nivel/Nivel'
 
 export default class Informacion extends Component {
@@ -30,6 +30,39 @@ export default class Informacion extends Component {
                 </Link>
             </div>
         </div>
+
+        <p className='informacion-container-title'>Contactanos</p>
+
+        <div className='informacion-container-contacto'>
+    
+            <div className='informacion-container-contacto-informacion'>
+                <div className='informacion-container-contacto-informacion-line'>
+                    <GeoAlt className='informacion-container-contacto-informacion-icon-location'/>
+                    <p className='informacion-container-contacto-informacion-text'>Manzana A casa 18 barrio Maria Camila Sur</p>
+                </div>
+                <br/>
+                <div className='informacion-container-contacto-informacion-line'>
+                    <Telephone className='informacion-container-contacto-informacion-icon-number'/>
+                    <p className='informacion-container-contacto-informacion-text'>3118816946</p>
+                </div>
+                <br/>
+                <div className='informacion-container-contacto-informacion-icons'>
+                    <a href='/' target="_blank" rel='noreferrer'><Facebook className='informacion-container-contacto-informacion-icon'/></a><br/>
+                    <a href='/' target="_blank" rel='noreferrer'><Instagram className='informacion-container-contacto-informacion-icon'/></a><br/>
+                    <a href='/' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
+                </div>
+            </div>
+
+            <form className='informacion-container-contacto-form'>
+                <input type="text" placeholder='Asunto'/><br/>
+                <input type="email" placeholder='Correo'/><br/>
+                <textarea placeholder='Mensaje'/><br/>
+                <button>Enviar</button>
+            </form>
+
+        </div>
+
+        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.6585597885132!2d-73.27102135953031!3d10.448645465195089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sEstudio%20Dirigido%20Y%20Guarderia%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671482908278!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>
     )

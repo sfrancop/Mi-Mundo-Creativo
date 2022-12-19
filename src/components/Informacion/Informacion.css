@@ -21,7 +21,7 @@
     height: 300px;
     background-image: url("https://images.pexels.com/photos/8612987/pexels-photo-8612987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center;
-    margin-top: 5%;
+    margin-top: 5rem;
 }
 
 .informacion-container-content-text{
@@ -57,4 +57,101 @@
 
 .informacion-container-content-button-link{
     cursor: auto;
+}
+
+.informacion-container-contacto{
+    display: flex;
+    margin-top: 5%;
+    background-color: rgb(15, 182, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.informacion-container-contacto-informacion{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.informacion-container-contacto-informacion-line{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+
+}
+
+.informacion-container-contacto-informacion-icon-location{
+    font-size: 30px;
+}
+
+.informacion-container-contacto-informacion-icon-number{
+    font-size: 30px;
+}
+
+.informacion-container-contacto-informacion-text{
+    margin: 1rem 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.informacion-container-contacto-informacion-icons{
+    font-size: 30px;
+    color: white;
+}
+
+.informacion-container-contacto-informacion-icons *{
+    margin-right: 1rem;
+    transition: all 0.2s;
+}
+
+.informacion-container-contacto-informacion-icons *:hover{
+    color: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+.informacion-container-contacto *{
+    display: block;
+}
+
+.informacion-container-contacto-form{
+    width: 60%;
+}
+
+.informacion-container-contacto-form *{
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin: auto;
+    height: 3rem;
+    background-color: white;
+    border-radius: .8rem;
+}
+
+.informacion-container-contacto-form *:not(button) {
+    text-align: center;
+    width: 70%;
+    height: 4rem;
+    transition: all 0.4s;
+}
+
+.informacion-container-contacto-form *:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.informacion-container-contacto-form button{
+    cursor: pointer;
+    width: 40%;
+    transition: all 0.4s;
+}
+
+.informacion-container-contacto-informacion-icons{
+    display: flex;
 }
