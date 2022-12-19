@@ -17,7 +17,7 @@ export default class Nivel extends Component {
                         {this.props.descripcion}
                         <br/>
                         <br/>
-                        De {this.props.edadInicial} a {this.props.edadFinal} años
+                        De los {this.props.edadInicial} {this.props.unidadInicial} a los {this.props.edadFinal} {this.props.unidadFinal}
                     </div>
                 </div>
 
