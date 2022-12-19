@@ -1,0 +1,60 @@
+.informacion-container-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #ca3338;
+    margin: 5% 0 0 0;
+}
+
+.informacion-container-niveles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 5% 0 5%;
+}
+
+.informacion-container-matricula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url("https://images.pexels.com/photos/8612987/pexels-photo-8612987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    margin-top: 5%;
+}
+
+.informacion-container-content-text{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #ca3338;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.informacion-container-content-button{
+    background-color: #ca3338;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20%;
+    margin-left: 33%;
+    transition: all 0.4s;
+    text-align: center;
+}
+
+.informacion-container-content-button:hover{
+    background-color: #e0383d;
+    cursor: pointer;
+}
+
+.informacion-container-content-button-icon{
+    color: white;
+    font-size: 30px;
+    transition: all 0.4s;
+}
+
+.informacion-container-content-button-link{
+    cursor: auto;
+}
