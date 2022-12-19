@@ -7,7 +7,8 @@ import Nivel from '../Nivel/Nivel'
 export default class Informacion extends Component {
   render() {
     return (
-      <div className='informacion-container'>
+
+        <div className='informacion-container'>
 
         <p className='informacion-container-title'>Niveles</p>
 
@@ -62,7 +63,7 @@ export default class Informacion extends Component {
 
         </div>
 
-        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.6585597885132!2d-73.27102135953031!3d10.448645465195089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sEstudio%20Dirigido%20Y%20Guarderia%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671482908278!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
       </div>
     )

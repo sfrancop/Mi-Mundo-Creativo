@@ -1,0 +1,43 @@
+.nivel-container{
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+    width: 25%;
+    height: 400px;
+    flex-grow: 0.01;
+    transition: 0.4s all;
+    margin-top: 5%;
+}
+
+.nivel-container-content-title{
+    font-size: 25px;
+    margin-top: 7rem;
+    transition: 0.6s all;
+}
+
+.nivel-container-content-description{
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+.nivel-container-content-icon{
+    font-size: 30px;
+}
+
+.nivel-container:hover {
+    background-position-y: -30px;
+}
+
+.nivel-container:hover .nivel-container-content-title{
+    opacity: 0;
+    margin-top: 0;
+}
+
+.nivel-container:hover .nivel-container-content-description{
+    opacity: 1;
+}

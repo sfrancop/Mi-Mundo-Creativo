@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from "../../assets/logo.svg"
 import "./Navbar.css"
-import { House, People, BrightnessAltHigh, ClipboardMinus, Award } from 'react-bootstrap-icons';
+import { House, People, BrightnessAltHigh, ClipboardMinus, Journal } from 'react-bootstrap-icons';
 
 export default class Navbar extends Component {
   render() {
@@ -34,12 +34,12 @@ export default class Navbar extends Component {
 
           <div className='navbar-container-list-element-container'>
             <Link to="/inscripciones"><ClipboardMinus className='navbar-container-list-element-icon'/></Link>
-            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/inscripciones">Inscripciones</Link></li>
+            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/inscripciones">Aspirantes</Link></li>
           </div>
 
           <div className='navbar-container-list-element-container'>
-            <Link to="/calificaciones"><Award className='navbar-container-list-element-icon'/></Link>
-            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/calificaciones">Calificaciones</Link></li>
+            <Link to="/estudiantes"><Journal className='navbar-container-list-element-icon'/></Link>
+            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/estudiantes">Estudiantes</Link></li>
           </div>
 
         </ul>
