@@ -58,18 +58,18 @@ export default function Informacion() {
             </div>
         </div>
 
-        <p className='informacion-container-title'>Niveles</p>
+        <p className='informacion-container-title'>Grados</p>
 
         <div className='informacion-container-niveles'>
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_960_720.png" edadInicial="1" edadFinal="2" unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033_960_720.png" edadInicial="1" edadFinal="2" unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2021/11/22/10/14/floral-6816295_960_720.png" edadInicial="1" edadFinal="2" unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2022/05/02/16/17/pattern-7169974_960_720.png" edadInicial="1" edadFinal="2" unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2017/01/31/17/55/background-2025984_960_720.png" edadInicial="1" edadFinal="2"  unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2018/02/24/09/40/pattern-3177667_960_720.png" edadInicial="1" edadFinal="2" unidadInicial="años" unidadFinal="años" descripcion="Lorem ipsum dolor sit amet, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_960_720.png" edad="Desde los 12 hasta los 20 meses" descripcion="Desarrollo en las áreas emocional, social, física, cognitiva, y sensorio motor de acuerdo a su edad. El desarrollo del cerebro permite que muchos movimientos sean automáticos." />
+            <Nivel nivel="Párvulos" fondo="https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033_960_720.png" edad="Desde los 2 años" descripcion="Los niños serán capaces de seguir instrucciones de dos o tres pasos, ordenar objetos por su forma o color, imitar las acciones de los adultos y compañeros de juego, y expresar una amplia variedad de emociones." />
+            <Nivel nivel="Prejardín" fondo="https://cdn.pixabay.com/photo/2021/11/22/10/14/floral-6816295_960_720.png" edad="Desde los 3 años" descripcion="Desarrollo en las áreas sensorial, motor, lenguaje, afectivo, social y cognitiva. Se contribuye al interés por diferencias de sexos y empieza la exploración para saber cuál les corresponde a ellos." />
+            <Nivel nivel="Jardín" fondo="https://cdn.pixabay.com/photo/2022/05/02/16/17/pattern-7169974_960_720.png" edad="Desde los 4 años" descripcion="Desarrollo del vocabulario, comprensión, la conciencia del mundo que los rodea, parte cognitiva, lenguaje y socio afectiva. Comenzarán a entender y comárar conceptos." />
+            <Nivel nivel="Transición" fondo="https://cdn.pixabay.com/photo/2017/01/31/17/55/background-2025984_960_720.png" edad="Desde los 5 años" descripcion="Desarrollo en el lenguaje, la escritura, parte afectiva. Empezarán a escribir su nombre, las vocales, palabras sencillas e incluso a escribir palabras cortas en función de los sonidos vistos." />
+            <Nivel nivel="Primero" fondo="https://cdn.pixabay.com/photo/2018/02/24/09/40/pattern-3177667_960_720.png" edad="Desde los 6 años" descripcion="Desarrollo en la concentración de forma prolongada. El lenguaje será la base del aprendizaje, se busca una pronunciación clara y con frases complejas. Empezarán a leer de forma independiente." />
         </div>
 
-        <p className='informacion-container-title'>Contactanos</p>
+        <p className='informacion-container-title'>Contáctanos</p>
 
         <div className='informacion-container-contacto'>
 
