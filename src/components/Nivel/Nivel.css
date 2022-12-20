@@ -12,17 +12,24 @@
     flex-grow: 0.01;
     transition: 0.4s all;
     margin-top: 5%;
+    background-position: center;
 }
 
 .nivel-container-content-title{
     font-size: 25px;
     margin-top: 10rem;
     transition: 0.6s all;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    border-radius: .5rem;
 }
 
 .nivel-container-content-description{
     opacity: 0;
     transition: 0.4s all;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    border-radius: .5rem;
 }
 
 .nivel-container:hover {
