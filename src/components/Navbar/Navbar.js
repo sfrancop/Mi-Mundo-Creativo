@@ -33,8 +33,8 @@ export default class Navbar extends Component {
           </div>
 
           <div className='navbar-container-list-element-container'>
-            <Link to="/inscripciones"><ClipboardMinus className='navbar-container-list-element-icon'/></Link>
-            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/inscripciones">Aspirantes</Link></li>
+            <Link to="/aspirantes"><ClipboardMinus className='navbar-container-list-element-icon'/></Link>
+            <li className='navbar-container-list-element'><Link className='navbar-container-list-element-link' to="/aspirantes">Aspirantes</Link></li>
           </div>
 
           <div className='navbar-container-list-element-container'>

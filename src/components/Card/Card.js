@@ -15,7 +15,7 @@ export default class Card extends Component {
                     <div className='nivel-container-content-description'>
                         {this.props.descripcion}
                         <br/>
-                        <a href="/estudiantes" target="_blank" rel='noreferrer'>
+                        <a href={this.props.link} target="_blank" rel='noreferrer'>
                         <br/>
                         <div>
                             <BoxArrowUpRight className='nivel-container-content-icon'/>
