@@ -86,8 +86,8 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .informacion-container-contacto-informacion{
@@ -179,4 +179,8 @@
 
 .informacion-container-contacto-informacion-icons{
     display: flex;
+}
+
+.informacion-text{
+    color: white;
 }

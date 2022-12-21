@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./Informacion.css"
 import { Link } from 'react-router-dom'
-import { ClipboardMinus, Facebook, GeoAlt, Instagram, Telephone, Whatsapp } from 'react-bootstrap-icons'
+import { ClipboardMinus, Envelope, Facebook, GeoAlt, Instagram, Telephone, Whatsapp } from 'react-bootstrap-icons'
 import Nivel from '../Nivel/Nivel'
 import img_1 from "../../assets/img_1.jpg"
 import img_2 from "../../assets/img_2.jpg"
@@ -42,9 +42,9 @@ export default function Informacion() {
         <div className='informacion-container-matricula'>
             <div className='informacion-container-content'>
                 <p className='informacion-container-content-text'>Inscribe a tu hijo</p>
-                <Link className='informacion-container-content-button-link' to="/inscripciones">
+                <Link className='informacion-container-content-button-link' to="/aspirantes">
                 <div className='informacion-container-content-button'>
-                    <Link to="/inscripciones"><ClipboardMinus className='informacion-container-content-button-icon'/></Link>
+                    <Link to="/aspirantes"><ClipboardMinus className='informacion-container-content-button-icon'/></Link>
                 </div>
                 </Link>
             </div>
@@ -74,6 +74,7 @@ export default function Informacion() {
         <div className='informacion-container-contacto'>
 
             <div className='informacion-container-contacto-informacion'>
+                <p className='informacion-text'>Horarios de atención: lunes a viernes de 8:00AM a 12:00AM y de 8:00PM a 6:00PM</p>
                 <div className='informacion-container-contacto-informacion-line'>
                     <GeoAlt className='informacion-container-contacto-informacion-icon-location'/>
                     <p className='informacion-container-contacto-informacion-text'>Manzana A casa 18 barrio Maria Camila Sur</p>
@@ -81,13 +82,17 @@ export default function Informacion() {
                 <br/>
                 <div className='informacion-container-contacto-informacion-line'>
                     <Telephone className='informacion-container-contacto-informacion-icon-number'/>
-                    <p className='informacion-container-contacto-informacion-text'>3118816946</p>
+                    <p className='informacion-container-contacto-informacion-text'>3118816946 - 605884200</p>
+                </div>
+                <br/>
+                <div className='informacion-container-contacto-informacion-line'>
+                    <Envelope className='informacion-container-contacto-informacion-icon-number'/>
+                    <p className='informacion-container-contacto-informacion-text'>jardinmimundocreativo@gmail.com</p>
                 </div>
                 <br/>
                 <div className='informacion-container-contacto-informacion-icons'>
                     <a href='/' target="_blank" rel='noreferrer'><Facebook className='informacion-container-contacto-informacion-icon'/></a><br/>
-                    <a href='/' target="_blank" rel='noreferrer'><Instagram className='informacion-container-contacto-informacion-icon'/></a><br/>
-                    <a href='/' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
+                    <a href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
                 </div>
             </div>
 
