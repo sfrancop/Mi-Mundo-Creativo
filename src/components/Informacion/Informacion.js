@@ -18,7 +18,7 @@ export default function Informacion() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            selectNewImgae(selectedIndex, images)
+            selectNewImgae(images, true)
         }, 4000);
         return () => clearInterval(interval)
     })
@@ -34,6 +34,7 @@ export default function Informacion() {
         hijo.className = 'informacion-container-carrusel-imagen'
         hijo.src = selectedImage
         imagen.appendChild(hijo)
+        console.log(nextIndex)
     }
 
     return (
