@@ -71,6 +71,9 @@ export default function Informacion() {
             <Nivel nivel="Primero" fondo="https://cdn.pixabay.com/photo/2018/02/24/09/40/pattern-3177667_960_720.png" edad="Desde los 6 años" descripcion="Desarrollo en la concentración de forma prolongada. El lenguaje será la base del aprendizaje, se busca una pronunciación clara y con frases complejas. Empezarán a leer de forma independiente." />
         </div>
 
+        <p className='informacion-container-title'>Valores agregados</p>
+        <ValoresAgregados/>
+
         <p className='informacion-container-title'>Contáctanos</p>
 
         <div className='informacion-container-contacto'>
@@ -106,10 +109,6 @@ export default function Informacion() {
             </form>
 
         </div>
-
-        <p className='informacion-container-title'>Valores agregados</p>
-
-        <ValoresAgregados/>
 
         <div>
             <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32397.80657231896!2d-73.27577993477473!3d10.466536145985492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sJard%C3%ADn%20Infantil%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671538926648!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
