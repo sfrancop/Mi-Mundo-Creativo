@@ -9,6 +9,7 @@ import img_3 from "../../assets/img_3.jpg"
 import img_4 from "../../assets/img_4.jpg"
 import img_5 from "../../assets/img_5.jpg"
 import img_6 from "../../assets/img_6.jpg"
+import ValoresAgregados from '../ValoresAgregados/ValoresAgregados'
 
 export default function Informacion() {
 
@@ -105,6 +106,10 @@ export default function Informacion() {
             </form>
 
         </div>
+
+        <p className='informacion-container-title'>Valores agregados</p>
+
+        <ValoresAgregados/>
 
         <div>
             <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32397.80657231896!2d-73.27577993477473!3d10.466536145985492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sJard%C3%ADn%20Infantil%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671538926648!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
