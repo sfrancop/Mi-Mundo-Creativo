@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./Nosotros.css"
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import { CloudSun, Eye } from 'react-bootstrap-icons'
+import { ChatHeart, CloudSun, Eye, Lightning } from 'react-bootstrap-icons'
 
 export default class Nosotros extends Component {
   render() {
@@ -47,6 +47,33 @@ export default class Nosotros extends Component {
                     atención y formación de los niños, así 
                     aumentando su estructura física y aumento en la 
                     cantidad de grados.
+                </p>
+            </div>
+        </div>
+
+        <div className='nosotros-container-row-1'>
+            <div className='nosotros-container-leftcolumn-1'>
+                <p className='nosotros-title-3'>Filosofía</p>
+                <p className='nosotros-text'>
+                El juego y la exploración de las emociones y las 
+                expresiones artísticas como medio de aprendizaje y 
+                la construcción de su formación de su ser niño.
+                </p>
+            </div>
+            <div className='nosotros-container-rightcolumn-1'>
+                <div className='nosotros-icon-3'><Lightning/></div>
+            </div>
+        </div>
+
+        <div className='nosotros-container-row-2'>
+        <div className='nosotros-container-leftcolumn-2'>
+                <div className='nosotros-icon-4'><ChatHeart/></div>
+            </div>
+            <div className='nosotros-container-leftcolumn-2'>
+                <p className='nosotros-title-4'>Lema</p>
+                <p className='nosotros-text'>
+                “Educación con valores y manejo de las emociones 
+                para la vida.”
                 </p>
             </div>
         </div>

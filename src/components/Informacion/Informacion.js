@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./Informacion.css"
 import { Link } from 'react-router-dom'
-import { ClipboardMinus, Envelope, Facebook, GeoAlt, Instagram, Telephone, Whatsapp } from 'react-bootstrap-icons'
+import { ClipboardMinus, Envelope, Facebook, GeoAlt, Telephone, Whatsapp } from 'react-bootstrap-icons'
 import Nivel from '../Nivel/Nivel'
 import img_1 from "../../assets/img_1.jpg"
 import img_2 from "../../assets/img_2.jpg"
@@ -23,7 +23,7 @@ export default function Informacion() {
         return () => clearInterval(interval)
     })
 
-    const selectNewImgae = (index, images, next=true ) => {
+    const selectNewImgae = (images, next=true ) => {
         const condition = next ? selectedIndex < images.length-1 : selectedIndex > 0;
         const nextIndex = next ? (condition ? selectedIndex + 1: 0): condition ? selectedIndex -1: images.length - 1;
         setSelectImage(images[nextIndex]);
