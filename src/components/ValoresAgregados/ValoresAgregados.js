@@ -1,46 +1,197 @@
 import React, { Component } from 'react'
 import "./ValoresAgregados.css"
 import {Balloon, Boxes, Building, CloudSun, People} from 'react-bootstrap-icons'
+import { motion } from 'framer-motion'
 
 export default class ValoresAgregados extends Component {
   render() {
     return (
       <div className='valoresagregados'>
 
-        <div className='valoresagregados-elemento-container'>
-            <div className='valoresagregados-elemento'>
-                <Building className='valoresagregados-elemento-icon'/>
-                <p className='valoresagregados-elemento-text'>Instalaciones adecuadas y espacios de recreación</p>
-            </div>
-        </div>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:-20, opacity: 0 }
+            }}
+            className='valoresagregados-elemento-container'>
+                <div className='valoresagregados-elemento'>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay:0.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-5, opacity: 0 }
+                        }}>
+                            <Building className='valoresagregados-elemento-icon'/>
+                    </motion.div>
+                    <motion.p 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='valoresagregados-elemento-text'>
+                            Instalaciones adecuadas y espacios de recreación
+                    </motion.p>
+                </div>
+        </motion.div>
 
-        <div className='valoresagregados-elemento-container'>
-            <div className='valoresagregados-elemento'>
-                <People className='valoresagregados-elemento-icon'/>
-                <p className='valoresagregados-elemento-text'>Grupos pequeños</p>
-            </div>
-        </div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { scale:1, opacity: 1 },
+                hidden: { scale:0.7, opacity: 0 }
+            }}
+            className='valoresagregados-elemento-container'>
+                <div className='valoresagregados-elemento'>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay:0.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-5, opacity: 0 }
+                        }}>
+                            <People className='valoresagregados-elemento-icon'/>
+                    </motion.div>
+                    <motion.p 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='valoresagregados-elemento-text'>
+                        Grupos pequeños
+                    </motion.p>
+                </div>
+        </motion.div>
 
-        <div className='valoresagregados-elemento-container'>
-            <div className='valoresagregados-elemento'>
-                <Balloon className='valoresagregados-elemento-icon'/>
-                <p className='valoresagregados-elemento-text'>Actividades extracurriculares</p>
-            </div>
-        </div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:20, opacity: 0 }
+            }}
+            className='valoresagregados-elemento-container'>
+                <div className='valoresagregados-elemento'>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay:0.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-5, opacity: 0 }
+                        }}>
+                            <Balloon className='valoresagregados-elemento-icon'/>
+                    </motion.div>
+                    <motion.p 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='valoresagregados-elemento-text'>
+                        Actividades extracurriculares
+                    </motion.p>
+                </div>
+        </motion.div>
 
-        <div className='valoresagregados-elemento-container'>
-            <div className='valoresagregados-elemento'>
-                <CloudSun className='valoresagregados-elemento-icon'/>
-                <p className='valoresagregados-elemento-text'>formación integral</p>
-            </div>
-        </div>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:-20, opacity: 0 }
+            }}
+            className='valoresagregados-elemento-container'>
+                <div className='valoresagregados-elemento'>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay:0.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-5, opacity: 0 }
+                        }}>
+                            <CloudSun className='valoresagregados-elemento-icon'/>
+                    </motion.div>
+                    <motion.p 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='valoresagregados-elemento-text'>
+                        Formación integral
+                    </motion.p>
+                </div>
+        </motion.div>
 
-        <div className='valoresagregados-elemento-container'>
-            <div className='valoresagregados-elemento'>
-                <Boxes className='valoresagregados-elemento-icon'/>
-                <p className='valoresagregados-elemento-text'>Pilares como el juego, arte, exploración del mundo y la literatura</p>
-            </div>
-        </div>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:20, opacity: 0 }
+            }}
+            className='valoresagregados-elemento-container'>
+                <div className='valoresagregados-elemento'>
+                    <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    variants={{
+                        visible: { y:0, opacity: 1 },
+                        hidden: { y:-5, opacity: 0 }
+                    }}>
+                        <Boxes className='valoresagregados-elemento-icon'/>
+                    </motion.div>
+                    <motion.p 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='valoresagregados-elemento-text'>
+                        Pilares como el juego, arte, exploración del mundo y la literatura
+                    </motion.p>
+                </div>
+        </motion.div>
 
 
       </div>

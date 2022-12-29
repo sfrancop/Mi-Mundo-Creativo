@@ -10,6 +10,7 @@ import img_4 from "../../assets/img_4.jpg"
 import img_5 from "../../assets/img_5.jpg"
 import img_6 from "../../assets/img_6.jpg"
 import ValoresAgregados from '../ValoresAgregados/ValoresAgregados'
+import { motion } from 'framer-motion'
 
 export default function Informacion() {
 
@@ -41,26 +42,71 @@ export default function Informacion() {
     return (
         <div className='informacion-container'>
 
-        <div className='informacion-container-matricula'>
-            <div className='informacion-container-content'>
-                <p className='informacion-container-content-text'>Inscribe a tu hijo</p>
-                <Link className='informacion-container-content-button-link' to="/aspirantes">
-                <div className='informacion-container-content-button'>
-                    <Link to="/aspirantes"><ClipboardMinus className='informacion-container-content-button-icon'/></Link>
+        <motion.div
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{duration:0.4, delay:1.14}}
+            className='informacion-container-matricula'>
+                <div className='informacion-container-content'>
+                    <motion.p
+                        initial={{opacity:0, y:-10}}
+                        animate={{opacity:1, y:0}}
+                        transition={{duration:0.6, delay:1.18}}
+                        className='informacion-container-content-text'>
+                            Inscribe a tu hijo
+                    </motion.p>
+                    <Link className='informacion-container-content-button-link' to="/aspirantes">
+                        <motion.div
+                            initial={{opacity:0, y:-10}}
+                            animate={{opacity:1, y:0}}
+                            transition={{duration:0.6, delay:1.23}}
+                            className='informacion-container-content-button'>
+                                <Link to="/aspirantes"><ClipboardMinus className='informacion-container-content-button-icon'/></Link>
+                        </motion.div>
+                    </Link>
                 </div>
-                </Link>
-            </div>
-        </div>
+        </motion.div>
 
-        <p className='informacion-container-title'>Galeria</p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-title'>
+                Galeria
+        </motion.p>
 
-        <div className='informacion-container-carrusel'>
-            <div id='imagen' className='informacion-container-carrusel-container'>
-                <img className='informacion-container-carrusel-imagen' src={selectedImage} alt="slide"></img>
-            </div>
-        </div>
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-carrusel'>
+                <div id='imagen' className='informacion-container-carrusel-container'>
+                    <img className='informacion-container-carrusel-imagen' src={selectedImage} alt="slide"></img>
+                </div>
+        </motion.div>
 
-        <p className='informacion-container-title'>Grados</p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-title'>
+                Grados
+        </motion.p>
 
         <div className='informacion-container-niveles'>
             <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_960_720.png" edad="Desde los 12 hasta los 20 meses" descripcion="Desarrollo en las áreas emocional, social, física, cognitiva, y sensorio motor de acuerdo a su edad. El desarrollo del cerebro permite que muchos movimientos sean automáticos." />
@@ -76,43 +122,149 @@ export default function Informacion() {
 
         <p className='informacion-container-title'>Contáctanos</p>
 
-        <div className='informacion-container-contacto'>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay:0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:-30, opacity: 0 }
+            }}
+            className='informacion-container-contacto'>
 
-            <div className='informacion-container-contacto-informacion'>
-                <p className='informacion-text'>Horarios de atención: lunes a viernes de 8:00AM a 12:00AM y de 8:00PM a 6:00PM</p>
-                <div className='informacion-container-contacto-informacion-line'>
-                    <GeoAlt className='informacion-container-contacto-informacion-icon-location'/>
-                    <p className='informacion-container-contacto-informacion-text'>Manzana A casa 18 barrio Maria Camila Sur</p>
+                <div className='informacion-container-contacto-informacion'>
+                    <motion.p
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:0.8 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                        className='informacion-text'>
+                            Horarios de atención: lunes a viernes de 8:00AM a 12:00AM y de 8:00PM a 6:00PM
+                    </motion.p>
+                    <motion.div 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1}}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                        className='informacion-container-contacto-informacion-line'>
+                            <GeoAlt className='informacion-container-contacto-informacion-icon-location'/>
+                            <p className='informacion-container-contacto-informacion-text'>Manzana A casa 18 barrio Maria Camila Sur</p>
+                    </motion.div>
+                    <br/>
+                    <motion.div 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                        className='informacion-container-contacto-informacion-line'>
+                            <Telephone className='informacion-container-contacto-informacion-icon-number'/>
+                            <p className='informacion-container-contacto-informacion-text'>3118816946 - 605884200</p>
+                    </motion.div>
+                    <br/>
+                    <motion.div 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                        className='informacion-container-contacto-informacion-line'>
+                            <Envelope className='informacion-container-contacto-informacion-icon-number'/>
+                            <p className='informacion-container-contacto-informacion-text'>jardinmimundocreativo2020@gmail.com</p>
+                    </motion.div>
+                    <br/>
+                    <motion.div 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.6 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                        className='informacion-container-contacto-informacion-icons'>
+                            <a href='/' target="_blank" rel='noreferrer'><Facebook className='informacion-container-contacto-informacion-icon'/></a><br/>
+                            <a href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
+                    </motion.div>
                 </div>
-                <br/>
-                <div className='informacion-container-contacto-informacion-line'>
-                    <Telephone className='informacion-container-contacto-informacion-icon-number'/>
-                    <p className='informacion-container-contacto-informacion-text'>3118816946 - 605884200</p>
-                </div>
-                <br/>
-                <div className='informacion-container-contacto-informacion-line'>
-                    <Envelope className='informacion-container-contacto-informacion-icon-number'/>
-                    <p className='informacion-container-contacto-informacion-text'>jardinmimundocreativo@gmail.com</p>
-                </div>
-                <br/>
-                <div className='informacion-container-contacto-informacion-icons'>
-                    <a href='/' target="_blank" rel='noreferrer'><Facebook className='informacion-container-contacto-informacion-icon'/></a><br/>
-                    <a href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
-                </div>
-            </div>
 
-            <form className='informacion-container-contacto-form'>
-                <input type="text" placeholder='Asunto'/><br/>
-                <input type="email" placeholder='Correo'/><br/>
-                <textarea placeholder='Mensaje'/><br/>
-                <button>Enviar</button>
-            </form>
+                <form className='informacion-container-contacto-form'>
+                    <motion.input 
+                        type="text" 
+                        placeholder='Asunto'
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:0.8 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                    /><br/>
+                    <motion.input
+                        type="email"
+                        placeholder='Correo'
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                    /><br/>
+                    <motion.textarea
+                        placeholder='Mensaje'
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.2 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}
+                    /><br/>
+                    <motion.button
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay:1.4 }}
+                        variants={{
+                            visible: { y:0, opacity: 1 },
+                            hidden: { y:-10, opacity: 0 }
+                        }}>
+                            Enviar
+                    </motion.button>
+                </form>
 
-        </div>
+        </motion.div>
 
-        <div>
-            <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32397.80657231896!2d-73.27577993477473!3d10.466536145985492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sJard%C3%ADn%20Infantil%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671538926648!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay:0.8 }}
+            variants={{
+                visible: { x:0, opacity: 1 },
+                hidden: { x:30, opacity: 0 }
+            }}>
+                <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32397.80657231896!2d-73.27577993477473!3d10.466536145985492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9fe3a84ee77%3A0x6c30e50d14fde4d3!2sJard%C3%ADn%20Infantil%20Mi%20Mundo%20Creativo!5e0!3m2!1ses-419!2sco!4v1671538926648!5m2!1ses-419!2sco" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </motion.div>
 
     </div>
     )

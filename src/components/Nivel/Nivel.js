@@ -1,17 +1,35 @@
 import React, { Component } from 'react'
 import "./Nivel.css"
+import { motion } from 'framer-motion'
 
 export default class Nivel extends Component {
     fondo = this.props.fondo
     render() {
         return (
-        <div className='nivel-container' style={{
-            backgroundImage: `url(${this.fondo})`,
+        <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
-            >
-
+            className='nivel-container'
+            style={{ backgroundImage: `url(${this.fondo})` }}>
                 <div className='nivel-container-content'>
-                    <div className='nivel-container-content-title'>{this.props.nivel}</div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay:0.8 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className='nivel-container-content-title'>
+                            {this.props.nivel}
+                    </motion.div>
                     <div className='nivel-container-content-description'>
                     <br/>
                         {this.props.descripcion}
@@ -20,8 +38,7 @@ export default class Nivel extends Component {
                         {this.props.edad}
                     </div>
                 </div>
-
-        </div>
+        </motion.div>
         )
     }
 }

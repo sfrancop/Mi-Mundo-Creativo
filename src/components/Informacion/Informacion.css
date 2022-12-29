@@ -32,6 +32,16 @@
     margin: 0 5% 0 5%;
 }
 
+.informacion-motion-container{
+
+    width:fit-content;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 50%;
+    background-color: red
+}
+
 .informacion-container-matricula{
     display: flex;
     justify-content: center;
