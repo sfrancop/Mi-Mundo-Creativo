@@ -120,7 +120,18 @@ export default function Informacion() {
         <p className='informacion-container-title'>Valores agregados</p>
         <ValoresAgregados/>
 
-        <p className='informacion-container-title'>Contáctanos</p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-title'>
+                Contáctanos
+        </motion.p>
 
         <motion.div
             initial="hidden"

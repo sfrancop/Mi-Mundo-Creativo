@@ -26,9 +26,10 @@ export default class Nivel extends Component {
                         variants={{
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
-                        }}
-                        className='nivel-container-content-title'>
-                            {this.props.nivel}
+                        }}>
+                            <div className='nivel-container-content-title'>
+                                {this.props.nivel}
+                            </div>
                     </motion.div>
                     <div className='nivel-container-content-description'>
                     <br/>
