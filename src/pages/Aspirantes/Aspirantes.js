@@ -3,18 +3,51 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import "./Aspirantes.css"
 import { FileEarmark } from 'react-bootstrap-icons'
+import { motion } from 'framer-motion'
 
 export default class Inscripcion extends Component {
   render() {
     return (
       <div>
         <Navbar/>
-        <p className='informacion-container-title'>Aspirantes</p>
-        <p className='aspirantes-texto'>Para inscribir a tu hijo en 
-        cualquiera de nuestros servicios acercate a la manzana A 
-        casa 18 en el barrio Maria Camila Sur con:</p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-title'>
+                Aspirantes
+        </motion.p>
 
-        <div className='nosotros-container-row-1'>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='aspirantes-texto'>
+              Para inscribir a tu hijo en en el jardín (para los 
+              demás servicios, contáctanos) acercate a la manzana A
+              casa 18 en el barrio Maria Camila Sur con:
+        </motion.p>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8}}
+          variants={{
+              visible: { x:0, opacity: 1 },
+              hidden: { x:-30, opacity: 0 }
+          }}
+          className='nosotros-container-row-1'>
             <div className='nosotros-container-leftcolumn-1'>
                 <p className='nosotros-text'>
                     <ul>
@@ -31,9 +64,20 @@ export default class Inscripcion extends Component {
                 </p>
             </div>
             <div className='nosotros-container-rightcolumn-1'>
-                <div className='nosotros-icon-1'><FileEarmark/></div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay:0.4}}
+                variants={{
+                    visible: { scale:1, opacity: 1 },
+                    hidden: { scale:0.8, opacity: 0 }
+                }}
+                className='nosotros-icon-1'>
+                    <FileEarmark/>
+              </motion.div>
             </div>
-        </div>
+        </motion.div>
         <Footer/>
       </div>
     )
