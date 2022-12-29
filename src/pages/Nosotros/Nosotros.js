@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./Nosotros.css"
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import { ChatHeart, CloudSun, Eye, Lightning } from 'react-bootstrap-icons'
+import { CloudSun, Eye, Lightning } from 'react-bootstrap-icons'
 import { motion } from 'framer-motion'
 
 export default class Nosotros extends Component {

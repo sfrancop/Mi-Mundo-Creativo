@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Nivel from '../../components/Nivel/Nivel'
 import Card from '../../components/Card/Card'
 import Footer from '../../components/Footer/Footer'
+import { motion } from 'framer-motion'
 
 export default class Servicios extends Component {
   render() {
@@ -10,7 +11,18 @@ export default class Servicios extends Component {
       <div>
         <Navbar/>
 
-        <p className='informacion-container-title'>Servicios</p>
+        <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className='informacion-container-title'>
+                Servicios
+        </motion.p>
 
         <div className='informacion-container-niveles'>
             <Nivel nivel="Estudio dirigido" fondo="https://cdn.pixabay.com/photo/2016/11/01/14/39/memphis-1788465_960_720.png" edadInicial="primeros" edadFinal="grados" unidadInicial="grados" unidadFinal="universitarios" descripcion="Orientación y refuerzo académico en los grados de preescolar, primaria, secundaria y universitario. Preparación para exámenes y talleres. Elaboración de trabajos manuales." />
