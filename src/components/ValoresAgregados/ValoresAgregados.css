@@ -1,43 +1,95 @@
-p, div{
-    padding: 0;
+@media screen and (min-width:768px){
+
+    p, div{
+        padding: 0;
+    }
+
+    .valoresagregados{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 5% 0 5%;
+    }
+
+    .valoresagregados-elemento{
+        text-align: center;
+        width: 90%;
+        height: 90%;
+        padding: 0 1rem 1rem 1rem;
+        background-color: #ca3338;
+        color: white;
+        border-radius: 1rem;
+        transition: all 0.6s;
+    }
+
+    .valoresagregados-elemento:hover{
+        width: 100%;
+        height: 100%;
+    }
+
+    .valoresagregados-elemento-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        width: 26%;
+    }
+
+    .valoresagregados-elemento-icon{
+        padding: 1rem;
+        height: 3rem;
+        background-color: #e0383d;
+        width: 70%;
+        border-radius: 0 0 1rem 1rem;
+    }
+
 }
 
-.valoresagregados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 5% 0 5%;
-}
+@media screen and (max-width:767px){
 
-.valoresagregados-elemento{
-    text-align: center;
-    width: 90%;
-    height: 90%;
-    padding: 0 1rem 1rem 1rem;
-    background-color: #ca3338;
-    color: white;
-    border-radius: 1rem;
-    transition: all 0.6s;
-}
+    p, div{
+        padding: 0;
+    }
 
-.valoresagregados-elemento:hover{
-    width: 100%;
-    height: 100%;
-}
+    .valoresagregados{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 5% 0 5%;
+    }
 
-.valoresagregados-elemento-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    width: 26%;
-}
+    .valoresagregados-elemento{
+        text-align: center;
+        width: 100%;
+        height: 90%;
+        padding: 0 1rem 1rem 1rem;
+        background-color: #ca3338;
+        color: white;
+        border-radius: 1rem;
+        transition: all 0.6s;
+    }
 
-.valoresagregados-elemento-icon{
-    padding: 1rem;
-    height: 3rem;
-    background-color: #e0383d;
-    width: 70%;
-    border-radius: 0 0 1rem 1rem;
+    .valoresagregados-elemento:hover{
+        width: 100%;
+        height: 100%;
+    }
+
+    .valoresagregados-elemento-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        width: 40%;
+    }
+
+    .valoresagregados-elemento-icon{
+        padding: 1rem;
+        height: 3rem;
+        background-color: #e0383d;
+        width: 70%;
+        border-radius: 0 0 1rem 1rem;
+    }
+
 }

@@ -14,8 +14,8 @@ export default class ValoresAgregados extends Component {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             variants={{
-                visible: { x:0, opacity: 1 },
-                hidden: { x:-20, opacity: 0 }
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
             className='valoresagregados-elemento-container'>
                 <div className='valoresagregados-elemento'>
@@ -51,8 +51,8 @@ export default class ValoresAgregados extends Component {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             variants={{
-                visible: { scale:1, opacity: 1 },
-                hidden: { scale:0.7, opacity: 0 }
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
             className='valoresagregados-elemento-container'>
                 <div className='valoresagregados-elemento'>
@@ -88,8 +88,8 @@ export default class ValoresAgregados extends Component {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             variants={{
-                visible: { x:0, opacity: 1 },
-                hidden: { x:20, opacity: 0 }
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
             className='valoresagregados-elemento-container'>
                 <div className='valoresagregados-elemento'>
@@ -125,8 +125,8 @@ export default class ValoresAgregados extends Component {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             variants={{
-                visible: { x:0, opacity: 1 },
-                hidden: { x:-20, opacity: 0 }
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
             className='valoresagregados-elemento-container'>
                 <div className='valoresagregados-elemento'>
@@ -162,8 +162,8 @@ export default class ValoresAgregados extends Component {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             variants={{
-                visible: { x:0, opacity: 1 },
-                hidden: { x:20, opacity: 0 }
+                visible: { y:0, opacity: 1 },
+                hidden: { y:-20, opacity: 0 }
             }}
             className='valoresagregados-elemento-container'>
                 <div className='valoresagregados-elemento'>

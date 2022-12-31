@@ -89,7 +89,7 @@
         font-size: 35px;
         color: #ca3338;
         cursor: pointer;
-        position: fixed;
+        position: absolute;
         margin-top: 3.33%;
         margin-left: 70%;
         z-index: 2;

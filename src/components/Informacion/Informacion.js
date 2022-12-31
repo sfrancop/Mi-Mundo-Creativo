@@ -108,7 +108,7 @@ export default function Informacion() {
         </motion.p>
 
         <div className='informacion-container-niveles'>
-            <Nivel nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_960_720.png" edad="Desde los 12 hasta los 20 meses" descripcion="Desarrollo en las áreas emocional, social, física, cognitiva, y sensorio motor de acuerdo a su edad. El desarrollo del cerebro permite que muchos movimientos sean automáticos." />
+            <Nivel className="nivelll" nivel="Caminadores" fondo="https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_960_720.png" edad="Desde los 12 hasta los 20 meses" descripcion="Desarrollo en las áreas emocional, social, física, cognitiva, y sensorio motor de acuerdo a su edad. El desarrollo del cerebro permite que muchos movimientos sean automáticos." />
             <Nivel nivel="Párvulos" fondo="https://cdn.pixabay.com/photo/2018/04/06/15/17/pattern-3296033_960_720.png" edad="Desde los 2 años" descripcion="Los niños serán capaces de seguir instrucciones de dos o tres pasos, ordenar objetos por su forma o color, imitar las acciones de los adultos y compañeros de juego, y expresar una amplia variedad de emociones." />
             <Nivel nivel="Prejardín" fondo="https://cdn.pixabay.com/photo/2021/11/22/10/14/floral-6816295_960_720.png" edad="Desde los 3 años" descripcion="Desarrollo en las áreas sensorial, motor, lenguaje, afectivo, social y cognitiva. Se contribuye al interés por diferencias de sexos y empieza la exploración para saber cuál les corresponde a ellos." />
             <Nivel nivel="Jardín" fondo="https://cdn.pixabay.com/photo/2022/05/02/16/17/pattern-7169974_960_720.png" edad="Desde los 4 años" descripcion="Desarrollo del vocabulario, comprensión, la conciencia del mundo que los rodea, parte cognitiva, lenguaje y socio afectiva. Comenzarán a entender y comárar conceptos." />
@@ -207,9 +207,9 @@ export default function Informacion() {
                             visible: { y:0, opacity: 1 },
                             hidden: { y:-10, opacity: 0 }
                         }}
-                        className='informacion-container-contacto-informacion-icons'>
-                            <a href='/' target="_blank" rel='noreferrer'><Facebook className='informacion-container-contacto-informacion-icon'/></a><br/>
-                            <a href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp className='informacion-container-contacto-informacion-icon'/></a>
+                        className='informacion-container-contacto-informacion-icon-location'>
+                            <a className='aaa' href='/' target="_blank" rel='noreferrer'><Facebook/></a>
+                            <a className='aaa' href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp /></a>
                     </motion.div>
                 </div>
 
