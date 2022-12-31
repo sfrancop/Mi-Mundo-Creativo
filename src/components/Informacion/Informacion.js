@@ -36,7 +36,6 @@ export default function Informacion() {
         hijo.className = 'informacion-container-carrusel-imagen'
         hijo.src = selectedImage
         imagen.appendChild(hijo)
-        console.log(nextIndex)
     }
 
     return (

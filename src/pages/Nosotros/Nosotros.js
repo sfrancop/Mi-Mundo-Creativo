@@ -172,6 +172,7 @@ export default class Nosotros extends Component {
                 </motion.div>
 
                 <Footer/>
+
             </div>
         </div>
     )
