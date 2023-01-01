@@ -16,7 +16,7 @@ export default class Nivel extends Component {
                     hidden: { y:-20, opacity: 0 }
                 }}
                 className='nivel-container'
-                style={{ backgroundImage: `url(${this.fondo})`, width:"100%"}}>
+                style={{ backgroundImage: `url(${this.fondo})`}}>
                     <div className='nivel-container-content'>
                         <motion.div
                             initial="hidden"

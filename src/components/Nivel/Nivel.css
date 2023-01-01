@@ -2,9 +2,8 @@
 
     .nivel-container{
         text-align: center;
-        width: 100%;
         border-radius: 1rem;
-        display: flex¿;
+        display: flex;
         justify-content: center;
         align-items: center;
         color: white;
@@ -55,7 +54,7 @@
     .nivel-container{
         margin: auto;
         text-align: center;
-        width: 100%;
+        width: 100% !important;
         border-radius: 1rem;
         display: flex;
         justify-content: center;

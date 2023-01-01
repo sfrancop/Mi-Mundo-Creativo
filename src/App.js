@@ -8,7 +8,7 @@ import Nosotros from './pages/Nosotros/Nosotros';
 
 function App() {
   return (
-    <div>
+    <div className='app-container'>
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home/>} />

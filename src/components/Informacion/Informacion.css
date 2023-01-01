@@ -20,6 +20,7 @@
         display: flex;
         justify-content: center;
         height: 30rem;
+        overflow: hidden;
     }
 
     .informacion-container-carrusel-imagen{
@@ -35,7 +36,6 @@
     }
 
     .informacion-motion-container{
-
         width:fit-content;
         margin: 0;
         padding: 0;
@@ -222,6 +222,7 @@
         display: flex;
         justify-content: center;
         height: 30rem;
+        overflow: hidden;
     }
 
     .informacion-container-carrusel-imagen{
@@ -232,7 +233,7 @@
     .informacion-container-niveles{
         flex-direction: column;
         justify-content: center;
-        margin: 0 5% 0 5%;
+        margin: 0 8% 0 5%;
     }
 
     .informacion-motion-container{
@@ -357,10 +358,6 @@
 
     .informacion-container-contacto *{
         display: block;
-    }
-
-    .informacion-container-contacto-form{
-        
     }
 
     .informacion-container-contacto-form *{

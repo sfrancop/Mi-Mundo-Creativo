@@ -42,10 +42,11 @@
     .navbar-container-list-element-container{
         background-color: #ca3338;
         border-radius: .5rem;
-        width: 17%;
+        width: 7rem;
         height: 70px;
         cursor: pointer;
         transition: all .4s;
+        padding: .5rem 0 .5rem 0;
     }
 
     .navbar-container-list-element-link{
@@ -90,8 +91,8 @@
         color: #ca3338;
         cursor: pointer;
         position: absolute;
-        margin-top: 3.33%;
-        margin-left: 70%;
+        margin-top: 35px;
+        margin-left: 65%;
         z-index: 2;
         transition: all 0.4s;
     }
