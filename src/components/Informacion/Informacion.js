@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import "./Informacion.css"
 import { Link } from 'react-router-dom'
 import { ClipboardMinus, Envelope, Facebook, GeoAlt, Telephone, Whatsapp } from 'react-bootstrap-icons'
@@ -10,7 +10,8 @@ import img_4 from "../../assets/img_4.jpg"
 import img_5 from "../../assets/img_5.jpg"
 import img_6 from "../../assets/img_6.jpg"
 import ValoresAgregados from '../ValoresAgregados/ValoresAgregados'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 export default function Informacion() {
 
@@ -36,9 +37,28 @@ export default function Informacion() {
         hijo.className = 'informacion-container-carrusel-imagen'
         hijo.src = selectedImage
         imagen.appendChild(hijo)
+    
     }
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        
+        e.preventDefault();
+        var button = document.getElementById("informacion-container-contacto-form-button")
+        button.innerHTML = "Mensaje enviado";
+
+        emailjs.sendForm('service_e72qogj', 'template_nlh2n2z', form.current, 'aHWaiOv2NEANPwN7i')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+      };
+
     return (
+
         <div className='informacion-container'>
 
         <motion.div
@@ -208,12 +228,14 @@ export default function Informacion() {
                             hidden: { y:-10, opacity: 0 }
                         }}
                         className='informacion-container-contacto-informacion-icon-location'>
-                            <a className='aaa' href='/' target="_blank" rel='noreferrer'><Facebook/></a>
-                            <a className='aaa' href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp /></a>
+                            <div className='informacion-container-contacto-informacion-icons'>
+                                <a href='/' target="_blank" rel='noreferrer'><Facebook/></a>
+                                <a href='https://api.whatsapp.com/send?phone=573118816946' target="_blank" rel='noreferrer'><Whatsapp /></a>
+                            </div>
                     </motion.div>
                 </div>
 
-                <form className='informacion-container-contacto-form'>
+                <form className='informacion-container-contacto-form' onSubmit={sendEmail} ref={form}>
                     <motion.input 
                         type="text" 
                         placeholder='Asunto'
@@ -225,6 +247,8 @@ export default function Informacion() {
                             visible: { y:0, opacity: 1 },
                             hidden: { y:-10, opacity: 0 }
                         }}
+                        name="topic"
+                        required
                     /><br/>
                     <motion.input
                         type="email"
@@ -237,6 +261,8 @@ export default function Informacion() {
                             visible: { y:0, opacity: 1 },
                             hidden: { y:-10, opacity: 0 }
                         }}
+                        name="email"
+                        required
                     /><br/>
                     <motion.textarea
                         placeholder='Mensaje'
@@ -248,6 +274,8 @@ export default function Informacion() {
                             visible: { y:0, opacity: 1 },
                             hidden: { y:-10, opacity: 0 }
                         }}
+                        name="message"
+                        required
                     /><br/>
                     <motion.button
                         initial="hidden"
@@ -257,8 +285,10 @@ export default function Informacion() {
                         variants={{
                             visible: { y:0, opacity: 1 },
                             hidden: { y:-10, opacity: 0 }
-                        }}>
-                            Enviar
+                        }}
+                        className='informacion-container-contacto-form-button'
+                        id='informacion-container-contacto-form-button'>
+                            <span className='informacion-container-contacto-form-text'>Enviar</span>
                     </motion.button>
                 </form>
 
