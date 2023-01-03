@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mi-Mundo-Creativo/static/css/main.6f32837c.css",
+    "main.css": "/Mi-Mundo-Creativo/static/css/main.68dc494b.css",
     "main.js": "/Mi-Mundo-Creativo/static/js/main.523ef464.js",
     "static/media/img_5.jpg": "/Mi-Mundo-Creativo/static/media/img_5.b9c6694cf0a3939f51b7.jpg",
     "static/media/img_1.jpg": "/Mi-Mundo-Creativo/static/media/img_1.0b7a7a03c686b9103ad5.jpg",
@@ -14,11 +14,11 @@
     "static/media/award-fill.svg": "/Mi-Mundo-Creativo/static/media/award-fill.46e4403786c2f3616237.svg",
     "static/media/lightning-fill.svg": "/Mi-Mundo-Creativo/static/media/lightning-fill.eba43865708cb10808a2.svg",
     "static/media/eye-fill.svg": "/Mi-Mundo-Creativo/static/media/eye-fill.05a0a6f791e245d2805a.svg",
-    "main.6f32837c.css.map": "/Mi-Mundo-Creativo/static/css/main.6f32837c.css.map",
+    "main.68dc494b.css.map": "/Mi-Mundo-Creativo/static/css/main.68dc494b.css.map",
     "main.523ef464.js.map": "/Mi-Mundo-Creativo/static/js/main.523ef464.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f32837c.css",
+    "static/css/main.68dc494b.css",
     "static/js/main.523ef464.js"
   ]
 }
