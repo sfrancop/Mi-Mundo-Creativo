@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mi-Mundo-Creativo/static/css/main.b1a297f2.css",
-    "main.js": "/Mi-Mundo-Creativo/static/js/main.3b18c32b.js",
+    "main.css": "/Mi-Mundo-Creativo/static/css/main.6f32837c.css",
+    "main.js": "/Mi-Mundo-Creativo/static/js/main.523ef464.js",
     "static/media/img_5.jpg": "/Mi-Mundo-Creativo/static/media/img_5.b9c6694cf0a3939f51b7.jpg",
     "static/media/img_1.jpg": "/Mi-Mundo-Creativo/static/media/img_1.0b7a7a03c686b9103ad5.jpg",
     "static/media/img_4.jpg": "/Mi-Mundo-Creativo/static/media/img_4.0547dbaa65b9a3ce3291.jpg",
@@ -9,12 +9,16 @@
     "static/media/img_3.jpg": "/Mi-Mundo-Creativo/static/media/img_3.f5a2fc3449667274650d.jpg",
     "static/media/img_2.jpg": "/Mi-Mundo-Creativo/static/media/img_2.c658f831b9c262f8f9d2.jpg",
     "static/media/logo.svg": "/Mi-Mundo-Creativo/static/media/logo.f6a3cc66ce7d4fb4c798bc34cbbf465b.svg",
+    "static/media/cloud-sun-fill.svg": "/Mi-Mundo-Creativo/static/media/cloud-sun-fill.78b15b78377f232dd9ef.svg",
     "index.html": "/Mi-Mundo-Creativo/index.html",
-    "main.b1a297f2.css.map": "/Mi-Mundo-Creativo/static/css/main.b1a297f2.css.map",
-    "main.3b18c32b.js.map": "/Mi-Mundo-Creativo/static/js/main.3b18c32b.js.map"
+    "static/media/award-fill.svg": "/Mi-Mundo-Creativo/static/media/award-fill.46e4403786c2f3616237.svg",
+    "static/media/lightning-fill.svg": "/Mi-Mundo-Creativo/static/media/lightning-fill.eba43865708cb10808a2.svg",
+    "static/media/eye-fill.svg": "/Mi-Mundo-Creativo/static/media/eye-fill.05a0a6f791e245d2805a.svg",
+    "main.6f32837c.css.map": "/Mi-Mundo-Creativo/static/css/main.6f32837c.css.map",
+    "main.523ef464.js.map": "/Mi-Mundo-Creativo/static/js/main.523ef464.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a297f2.css",
-    "static/js/main.3b18c32b.js"
+    "static/css/main.6f32837c.css",
+    "static/js/main.523ef464.js"
   ]
 }
