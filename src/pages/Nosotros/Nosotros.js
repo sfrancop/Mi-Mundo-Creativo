@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./Nosotros.css"
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import { CloudSun, Eye, Lightning } from 'react-bootstrap-icons'
+import { Award, CloudSun, Eye, Lightning } from 'react-bootstrap-icons'
 import { motion } from 'framer-motion'
 
 export default class Nosotros extends Component {
@@ -37,7 +37,7 @@ export default class Nosotros extends Component {
                     className='nosotros-container-row-1'>
                         <div className='nosotros-container-leftcolumn-1'>
                             <p className='nosotros-title-1'>Misión</p>
-                            <p className='nosotros-text'>
+                            <p className='nosotros-text nosotros-text-1'>
                                 El Jardín Infantil Mi Mundo Creativo tiene como 
                                 finalidad brindarle a la comunidad un servicio
                                 indóneo y de calidad para los niños después de
@@ -92,7 +92,7 @@ export default class Nosotros extends Component {
                         </div>
                         <div className='nosotros-container-rightcolumn-2'>
                             <p className='nosotros-title-2'>Visión</p>
-                            <p className='nosotros-text'>
+                            <p className='nosotros-text nosotros-text-2'>
                                 El Jardín Infantil Mi Mundo Creativo tiene como 
                                 propisto darse a conocer ante la comunidad, 
                                 por su trabajo con la población infantil, 
@@ -116,7 +116,7 @@ export default class Nosotros extends Component {
                     className='nosotros-container-row-1'>
                         <div className='nosotros-container-leftcolumn-1'>
                             <p className='nosotros-title-3'>Filosofía</p>
-                            <p className='nosotros-text'>
+                            <p className='nosotros-text nosotros-text-3'>
                             El juego y la exploración de las emociones y las 
                             expresiones artísticas como medio de aprendizaje y 
                             la construcción de su formación de su ser niño.
@@ -159,12 +159,12 @@ export default class Nosotros extends Component {
                                     hidden: { scale:0.8, opacity: 0 }
                                 }}
                                 className='nosotros-icon-4'>
-                                    <CloudSun/>
+                                    <Award/>
                             </motion.div>
                         </div>
                         <div className='nosotros-container-rightcolumn-2'>
                             <p className='nosotros-title-4'>Lema</p>
-                            <p className='nosotros-text'>
+                            <p className='nosotros-text nosotros-text-4'>
                             “Educación con valores y manejo de las emociones 
                             para la vida.”
                             </p>

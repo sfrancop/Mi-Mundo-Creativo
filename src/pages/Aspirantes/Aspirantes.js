@@ -47,19 +47,19 @@ export default class Inscripcion extends Component {
               visible: { x:0, opacity: 1 },
               hidden: { x:-30, opacity: 0 }
           }}
-          className='nosotros-container-row-1'>
+          className='nosotros-container-row-1 aspirantes-row'>
             <div className='nosotros-container-leftcolumn-1'>
                 <p className='nosotros-text'>
-                    <ul>
-                      <li>Fotocopia de registro civil de nacimiento</li>
-                      <li>Fotocopia del carnet de vacunación</li>
-                      <li>Fotocopia del carnet de creicimiento y desarrollo</li>
-                      <li>Fotocopia del carnet de EPS</li>
-                      <li>Fotocopia de la cédula de los padres y/o acudiente</li>
-                      <li>Último boletín de notas</li>
-                      <li>Paz y salvo del colegio anterior</li>
-                      <li>SIMAT</li>
-                      <li>Folder de cartón plástico color rojo</li>
+                    <ul className='aspirantes-lista'>
+                      <li><span className='aspirantes-lista-point'>• </span>Fotocopia de registro civil de nacimiento</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Fotocopia del carnet de vacunación</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Fotocopia del carnet de creicimiento y desarrollo</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Fotocopia del carnet de EPS</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Fotocopia de la cédula de los padres y/o acudiente</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Último boletín de notas</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Paz y salvo del colegio anterior</li>
+                      <li><span className='aspirantes-lista-point'>• </span>SIMAT</li>
+                      <li><span className='aspirantes-lista-point'>• </span>Folder de cartón plástico color rojo</li>
                     </ul>
                 </p>
             </div>
@@ -78,6 +78,18 @@ export default class Inscripcion extends Component {
               </motion.div>
             </div>
         </motion.div>
+        <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay:0.4}}
+                variants={{
+                    visible: { scale:1, opacity: 1 },
+                    hidden: { scale:0.8, opacity: 0 }
+                }}
+                className='aspirantes-icon'>
+                    <FileEarmark/>
+              </motion.div>
         <Footer/>
       </div>
     )

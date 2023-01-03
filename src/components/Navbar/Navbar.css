@@ -11,15 +11,16 @@
     }
 
     .navbar-container-image{
-        height: 25%;
-        width: 25%;
+        margin: 1rem 0;
+        height: 200px;
+        width: 200px;
         min-width: 10%;
         transition: all .4s;
     }
 
     .navbar-container-image:hover{
-        height: 25.5%;
-        width: 25.5%;
+        height: 210px;
+        width: 210px;
     }
 
     .navbar-container-list{
@@ -27,7 +28,8 @@
         display: flex;
         margin: 0;
         padding: 0;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 5%;
         margin-left: 10%;
         margin-right: 10%;
     }

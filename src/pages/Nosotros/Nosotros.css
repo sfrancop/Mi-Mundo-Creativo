@@ -1,77 +1,154 @@
-.nosotros-container{
-    margin: 0 5rem 0 5rem;
+@media screen and (min-width:768px){
+
+    .nosotros-container{
+        margin: 0 5rem 0 5rem;
+    }
+
+    .nosotros-container-row-1{
+        display: flex;
+        margin: 0 5% 0 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros-icon-1{
+        font-size: 300px;
+        color: #039fe4;
+    }
+
+    .nosotros-container-leftcolumn-1{
+        width: 55%;
+        margin-right: 5%;
+    }
+
+    .nosotros-container-rightcolumn-1{
+        width: 40%;
+    }
+
+    .nosotros-title-1{
+        font-size: 30px;
+        color: #039fe4;
+    }
+
+    .nosotros-container-row-2{
+        display: flex;
+        margin: 0 5% 0 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros-icon-2{
+        font-size: 300px;
+        color: rgb(15, 182, 0);
+    }
+
+    .nosotros-container-leftcolumn-2{
+        display: flex;
+        justify-content: flex-end;
+        width: 55%;
+        margin-right: 5%;
+    }
+
+    .nosotros-container-rightcolumn-2{
+        width: 40%;
+    }
+
+    .nosotros-title-2{
+        font-size: 30px;
+        color: rgb(15, 182, 0);
+    }
+
+    .nosotros-title-3{
+        font-size: 30px;
+        color: #ca3338;
+    }
+
+    .nosotros-icon-3{
+        font-size: 300px;
+        color: #ca3338;
+    }
+
+    .nosotros-title-4{
+        font-size: 30px;
+        color: blueviolet
+    }
+
+    .nosotros-icon-4{
+        font-size: 300px;
+        color: blueviolet;
+    }
+
 }
 
-.nosotros-container-row-1{
-    display: flex;
-    margin: 0 5% 0 5%;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (max-width:767px){
 
-.nosotros-icon-1{
-    font-size: 300px;
-    color: #039fe4;
-}
+    .nosotros-title-1{
+        text-align: center;
+        font-size: 30px;
+        color: #039fe4;
+    }
 
-.nosotros-container-leftcolumn-1{
-    width: 55%;
-    margin-right: 5%;
-}
+    .nosotros-title-2{
+        text-align: center;
+        font-size: 30px;
+        color: #0FB600;
+    }
 
-.nosotros-container-rightcolumn-1{
-    width: 40%;
-}
+    .nosotros-title-3{
+        text-align: center;
+        font-size: 30px;
+        color: #ca3338;
+    }
 
-.nosotros-title-1{
-    font-size: 30px;
-    color: #039fe4;
-}
+    .nosotros-title-4{
+        text-align: center;
+        font-size: 30px;
+        color: blueviolet;
+    }
 
-.nosotros-container-row-2{
-    display: flex;
-    margin: 0 5% 0 5%;
-    justify-content: center;
-    align-items: center;
-}
+    .nosotros-text-1{
+        text-align: center;
+        margin: 0 5% 0 5%;
+        background-image: url("../../assets/cloud-sun-fill.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 150px;
+    }
 
-.nosotros-icon-2{
-    font-size: 300px;
-    color: rgb(15, 182, 0);
-}
+    .nosotros-text-2{
+        text-align: center;
+        margin: 0 5% 0 5%;
+        background-image: url("../../assets/eye-fill.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 150px;
+    }
 
-.nosotros-container-leftcolumn-2{
-    display: flex;
-    justify-content: flex-end;
-    width: 55%;
-    margin-right: 5%;
-}
+    .nosotros-text-3{
+        text-align: center;
+        margin: 0 5% 0 5%;
+        background-image: url("../../assets/lightning-fill.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 150px;
+    }
 
-.nosotros-container-rightcolumn-2{
-    width: 40%;
-}
+    .nosotros-text-4{
+        text-align: center;
+        margin: 0 5% 0 5%;
+        background-image: url("../../assets/award-fill.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 150px;
+    }
 
-.nosotros-title-2{
-    font-size: 30px;
-    color: rgb(15, 182, 0);
-}
+    .nosotros-icon-1, .nosotros-icon-2, .nosotros-icon-3, .nosotros-icon-4{
+        display: none;
+    }
 
-.nosotros-title-3{
-    font-size: 30px;
-    color: #ca3338;
-}
 
-.nosotros-icon-3{
-    font-size: 300px;
-    color: #ca3338;
-}
-
-.nosotros-title-4{
-    font-size: 30px;
-    color: blueviolet
-}
-
-.nosotros-icon-4{
-    font-size: 300px;
-    color: blueviolet;
 }

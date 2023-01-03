@@ -1,4 +1,50 @@
-.aspirantes-texto{
-    margin: 0 5% 0 5%;
-    text-align: center;
+@media screen and (min-width:768px){
+
+    .aspirantes-texto{
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+
+    .aspirantes-icon{
+        display: none;
+    }
+
+    .aspirantes-lista-point{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:767px){
+
+    .aspirantes-texto{
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+
+    .aspirantes-lista{
+        text-align: center;
+        width: 400px;
+        list-style-type: none;
+        margin: 0 30px 30px 0;
+    }
+
+    .aspirantes-lista li{
+        margin-bottom: 1rem;
+    }
+
+    .aspirantes-row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aspirantes-icon{
+        font-size: 300px;
+        color: #ca3338;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
 }
