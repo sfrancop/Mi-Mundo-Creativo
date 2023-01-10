@@ -174,7 +174,7 @@ export default function Informacion() {
                             hidden: { y:-10, opacity: 0 }
                         }}
                         className='informacion-text'>
-                            Horarios de atención: lunes a viernes de 7:00AM a 12:00AM
+                            Horarios de atención: lunes a viernes de 7:00AM a 12:00PM
                     </motion.p>
                     <motion.div 
                         initial="hidden"
